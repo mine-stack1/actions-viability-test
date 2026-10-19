@@ -1,0 +1,13 @@
+name: Demo Viability Check
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Runner Test
+        run: |
+          echo "Runner active and healthy!"
+          hostname
+          uptime
